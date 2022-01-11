@@ -1,5 +1,7 @@
-var baseUrl = "https://xxxxx.atlassian.net";
+var baseUrl = 'https://xxxxx.atlassian.net';
 var token = Utilities.base64Encode('email@hogehoge.com:token');
+
+var spreadsheet = SpreadsheetApp.openById('spreadsheetid');
 
 //userシートは、送信用チェック、email、display_name, user_idの並び
 const userSheet = spreadsheet.getSheetByName('user')
