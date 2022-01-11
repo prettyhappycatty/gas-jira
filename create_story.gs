@@ -4,6 +4,8 @@ var token = Utilities.base64Encode('email@hogehoge.com:token');
 var spreadsheet = SpreadsheetApp.openById('spreadsheetid');
 //storyシートは、送信用チェック、issue_id、summary, others
 const storySheet = spreadsheet.getSheetByName('story')
+const projectName = "projectname"
+const issuetypeOfStory = ""
 
 function test(){
   createStory()
@@ -88,10 +90,10 @@ function getStoryIssueJson(summary){
   "fields": {
     "summary": summary,
     "project": {
-      "key": project
+      "key": projectName
     },
     "issuetype": {
-      "id": issuetype_story
+      "id": issuetypeOfStory
     }
   }
   }
