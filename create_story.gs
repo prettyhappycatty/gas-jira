@@ -82,9 +82,6 @@ function postStoryIssue(json){
  */
 function getStoryIssueJson(summary){
 
-  issuetype_story="10004"
-  project="MEOW"
-
   json = {
   "update": {},
   "fields": {
